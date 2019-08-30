@@ -34,7 +34,7 @@ public class MenuDemo implements ActionListener{
 	menu.addActionListener(this);
         menu.setMnemonic(KeyEvent.VK_A);
         menu.getAccessibleContext().setAccessibleDescription(
-                "The only menu in this program that has menu items");
+                "The only menu in this program that has menu items"); //maddy updated
 	
         menuBar.add(menu);
 	
