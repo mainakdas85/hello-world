@@ -20,6 +20,7 @@ public class MenuDemo implements ActionListener {
         JTextArea output;
         JScrollPane scrollPane;
         String newline = "\n";
+        String name = "Mainak Das" ;
 
         public JMenuBar createMenuBar() {
                 JMenuBar menuBar;
