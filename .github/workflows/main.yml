@@ -9,14 +9,14 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
+    - name: Test shell command for current path
       run: pwd
-    - name: Run a multi-line script
+    - name: Execute the look up Script
       run: |
         cd /home/runner/work/hello-world/hello-world/scripts/config
         chmod 777 SPLookUpXML.sh
         ./SPLookUpXML.sh
-    - name: Upload math result for job 1
+    - name: Upload the Sailpoint Generated Artefacts
       uses: actions/upload-artifact@v2
       with:
         name: SPXMLFiles
