@@ -19,6 +19,6 @@ jobs:
     - name: Upload the Sailpoint Generated Artefacts
       uses: actions/upload-artifact@v2
       with:
-        name: SPXMLFiles
+        name: SPWExport
         path: /home/runner/work/hello-world/hello-world/scripts/config/
       
