@@ -15,3 +15,8 @@ jobs:
       run: |
         pwd
         ls -ltr
+    - uses: actions/PublishBuildArtifacts@1
+      name: Publish Artefacts
+      inputs:
+        PathtoPublish: "/"
+      
