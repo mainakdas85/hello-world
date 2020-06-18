@@ -10,11 +10,14 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Hello, world Mainak
+      run: echo Hello, world Mainak > mainak.txt
     - name: Run a multi-line script
       run: |
-        pwd
-        ls -ltr
-    - uses: actions/PublishBuildArtifacts@1
-      name: Publish Artefacts
+        pwd > mainak.txt
+        ls -ltr > mainak.txt
+    - name: Upload math result for job 1
+      uses: actions/upload-artifact@v1
+      with:
+        name: homework
+        path: mainak.txt
       
